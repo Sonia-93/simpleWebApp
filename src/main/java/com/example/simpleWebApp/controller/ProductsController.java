@@ -29,6 +29,7 @@ private ProductService service;
       }
       @PostMapping("/products")
       public void addProduct(Product prod){
+      System.out.println("Adding product: " + prod);
          service.addProduct(prod);
       }
       
