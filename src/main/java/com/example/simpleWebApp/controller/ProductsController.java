@@ -12,6 +12,8 @@ import com.example.simpleWebApp.model.Product;
 import com.example.simpleWebApp.service.ProductService;
 import java.util.List;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PutMapping;
+
 
 
 @RestController 
@@ -33,7 +35,12 @@ private ProductService service;
       System.out.println("Adding product: " + prod);
          service.addProduct(prod);
       }
-      
+      @PutMapping("path/{id}")
+      public String putMethodName(@PathVariable String id, @RequestBody String entity) {
+          //TODO: process PUT request
+          
+          return entity;
+      }
 
 
  }
