@@ -43,4 +43,7 @@ public class ProductService {
         .filter(p->p.getProdId()==prodId)
         .findFirst().get();
     }
+    public void addProduct(Product prod){
+        products.add(prod);
+    }
 }
