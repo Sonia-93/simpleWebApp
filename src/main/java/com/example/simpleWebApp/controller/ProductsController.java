@@ -27,6 +27,10 @@ private ProductService service;
       public Product getProductById(@PathVariable int prodId) {
           return service.getProductById(prodId);
       }
+      @PostMapping("/products")
+      public void addProduct(Product prod){
+         service.addProduct(prod);
+      }
       
 //      @GetMapping ("/products/{prodId}")  
 //       public Product getProductById(@PathVariable int prodId){
