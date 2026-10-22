@@ -12,8 +12,6 @@ import com.example.simpleWebApp.model.Product;
 @Component  
 public class ProductService {
      
-   
-
   
      List <Product> products= new ArrayList<>(Arrays.asList(
       new Product(101,"Iphone",50000),
@@ -31,4 +29,9 @@ public class ProductService {
     public void addProduct(Product prod){
         products.add(prod);
     }
+
+     public void updateProduct(Product prod){
+     
+ }
+
 } 

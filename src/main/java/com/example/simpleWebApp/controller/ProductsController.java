@@ -35,14 +35,10 @@ private ProductService service;
       System.out.println("Adding product: " + prod);
          service.addProduct(prod);
       }
-      @PutMapping("path/{id}")
-      public String putMethodName(@PathVariable String id, @RequestBody String entity) {
-          
-          
-          return entity;
-      }
 
-
+   public void updateProduct(@RequestBody Product prod){
+      service.updateProduct(prod);
+   }
  }
 
    
